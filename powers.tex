@@ -1,0 +1,24 @@
+\section*{Powers}
+
+\indent\textbf{Theorem 4.1.} \textit{Let $n$ be an integer $\ge 1$ and let $f(x) = x^n$. Then
+  \[\frac{df}{dx} = nx^{n-1}.\]}
+
+\indent\textit{Remarks on the proof}. When we have some number $(x + h)^n$, writing each factor yields
+\[(x + h)(x + h)\cdots (x + h).\]
+If we were to distribute we would get many terms that we do not need to think about. We are able to select which
+terms from each factor we wish to distribute to find a particular number. There exists $n$ number of $x$ and we
+multiply them by each other, giving us $x^n$.
+
+If we choose $x$ from all but one factor, then the remaining factor has $h$ and we get $hx^{n-1}$.
+But we do this for each factor. The idea is that it is not the $h$ from one particular factor,
+but it could be the $h$ from any factor.
+Since the terms are added when we distribute $(x + h)^n$, then we add the $n$ instances of $hx$, and
+get $nhx^{n-1}$.
+
+Now we have the term $x^n$ and the only term $nhx^{n-1}$ having a factor of $h^1$. We conclude that every other
+term must choose $h$ from at least two factors. Hence we have
+\[(x + h)^n = x^n + nhx^{n-1} + h^2g(x, h),\]
+where $g(x,h)$ is some expression involving powers of $x$ and $h$ with numerical coefficients. Of course $h^2$
+is factored from the expression.
+
+The rest of the proof follows very naturally using the Newton quotient.
