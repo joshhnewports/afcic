@@ -1,0 +1,27 @@
+\section*{Sums, Products, and Quotients}
+
+\textbf{Definition.} A function is said to be \textbf{continuous at a point $x$} if and only if
+\[\lim_{h\to0} f(x + h) = f(x).\]
+A function is said to be \textbf{continuous} if it is continuous at every point of its domain of definition.
+
+\begin{center}
+\textit{Let $f$ be a function having a derivative $f^\prime(x)$ at $x$. Then $f$ is continuous at $x$.}
+\end{center}
+
+\textit{Remarks on the proof.}
+We note that if a function $f(x)$ is continuous at $x$, then it is continuous at every point of its domain of
+definition.
+The proposition statement states that $f$ has a derivative $f^\prime(x)$ at $x$, this is equivalent to saying that
+$f$ is differentiable. So what we wish to prove is:
+
+\begin{center}
+\textit{Let $f$ be a function that is differentiable. Then $f$ is continuous.}
+\end{center}
+
+We set the Newton quotient of $f$ equal to itself then multiply by $h$ and get
+\[h \frac{f(x + h) - f(x)}{h} = f(x + h) - f(x).\]
+As $h$ approaches 0, the left term approaches $0f^\prime$. Thus we have
+\[\lim_{h\to0} f(x + h) - f(x) = 0f^\prime(x) = 0.\]
+This is another way of stating that
+\[\lim_{h\to0} f(x + h) = f(x).\]
+By definition, $f$ is continuous.
