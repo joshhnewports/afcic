@@ -5,6 +5,27 @@
   the formula}
   \[(f \circ g)^\prime(x) = f^\prime(g(x))g^\prime(x).\]
 
-  \textit{Remarks on the proof.} For $h$ in $H_1$, we find
+  \textit{Remarks on the proof.} We distinguish two kinds of numbers $h$. Let $H_1$ be the set of $h$ such that
+  $g(x + h) - g(x) \ne 0$, and $H_2$ be the set of $h$ such that $g(x + h) - g(x) = 0$.
+
+  For $h$ in $H_1$, we must show that the limit of the Newton quotient of $f \circ g$ is $f^\prime(u)g^\prime(x)$.
+  By definition, we have
+  \[\frac{f(g(x + h)) - f(g(x))}{h}.\]
+  Put $u = g(x)$, as we have practiced before in the examples, and let $k = g(x + h) - g(x)$. Then we have
+  \[\frac{f(g(x) + g(x + h) - g(x)) - f(u)}{h} = \frac{f(u + k) - f(u)}{h}.\]
+  We have essentially added $0$ to the input of $f$. Since $k$ is expressed in $h$, we say that $k$ depends on
+  $h$ and tends to $0$ as $h$ approaches $0$. Since we are dealing with $h$ in $H_1$, then $k$ is unequal to $0$
+  for all small values of $h$. Then we can multiply and divide this quotient by $k$, and obtain
+  \[\frac{f(u + k) - f(u)}{k} \frac{k}{h} = \frac{f(u + k) - f(u)}{k} \frac{g(x + h) - g(x)}{h}.\]
+  Note that we multiply the Newton quotient by $k/k$.
+  As $h$ approaches $0$, then our Newton quotient approaches
   \[f^\prime(u)g^\prime(x).\]
-  
+
+  For $h$ in $H_2$, we show that the limit of the Newton quotient of $f \circ g$ is $0$, and that $0$ is equivalent
+  to writing the formula for the chain rule anyway. We assume that we have $g(x + h) - g(x) = 0$ for arbitrarily
+  small values of $h$. Then
+  \[\lim_{h\to0} \frac{f(g(x + h)) - f(g(x))}{h} = 0,\]
+  because $g(x + h) - g(x) = 0$, so $g(x + h) = g(x)$ therefore
+  \[f(g(x + h)) - f(g(x)) = f(g(x)) - f(g(x)) = 0.\]
+  Since the limit approaches $0$ as $h$ approaches $0$, we can choose any number equal to $0$ to represent this
+  limit. We choose $f^\prime(g(x))g^\prime(x)$ to keep the formula constant whether $h$ is in $H_1$ or $H_2$.
