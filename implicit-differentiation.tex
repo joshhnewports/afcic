@@ -4,9 +4,12 @@ Suppose that a curve is defined by an equation
 \[F(x, y) = 0.\]
 Assuming that $y = f(x)$ is a differentiable function, we can find an expression for the derivative.
 
-\textbf{Example.} Find the derivative $dy/dx$ if $x^2 + y^2 = 7$.
+\textbf{Example.} Find the derivative $dy/dx$ in terms of $x$ and $y$ if $x^2 + xy = 2$.
 
-We differentiate both sides of the equation and get
-\[2x + 2y \frac{dy}{dx} = 2x + 2y \frac{dy}{dx} = 0.\]
-Hence
-\[\frac{dy}{dx} = \frac{-x}{y}.\]
+We differentiate both sides of the equation. The right-hand side is $0$ and the left-hand side is
+\[\frac{d}{dx} (x^2 + xy) = \frac{d(x^2)}{dx} + \frac{d(xy)}{dx}.\]
+The left term is $2x$ and by the product rule we have
+\[2x + x \frac{dy}{dx} + y \frac{dx}{dx} = 2x + x \frac{dy}{dx} + y.\]
+Now we find $dy/dx$ in terms of $x$ and $y$, which is
+\[\frac{dy}{dx} = \frac{-y - 2x}{x},\]
+and we are done.
