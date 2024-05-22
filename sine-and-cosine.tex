@@ -13,3 +13,29 @@ We see that $q = \theta/2\pi$ and we have our part. The area of $S$ is
 
 Determine the length $L$ of an arc of $\theta$ radians on a circle of radius $r$. The whole of the length is $2\pi r$ and the whole of the radians is $2\pi$. Again we take $\theta/2\pi$ and we get that
 \[L = \frac{\theta}{2\pi} 2\pi r = r\theta.\] 
+
+\begin{theorem}
+  The functions $\sin x$ and $\cos x$ have derivatives and
+  \begin{align*}
+    \frac{d(\sin x)}{dx} &= \cos x,\\
+    \frac{d(\cos x)}{dx} &= -\sin x.
+  \end{align*}
+\end{theorem}
+
+\begin{proof}
+  The Newton quotient of $\sin x$ is
+  \[\frac{\sin(x + h) - \sin x}{h}.\]
+  Using the addition formula, the Newton quotient is then
+  \[\frac{\sin x \cos h + \cos x \sin h - \sin x}{h}.\]
+  We factorize and get
+  \[\frac{\cos x \sin h + \sin x(\cos h - 1)}{h}.\]
+  We separate our quotient:
+  \[\cos x \frac{\sin h}{h} + \sin x \frac{\cos h - 1}{h}.\]
+  For now, assume that as $h$ approaches $0$ the limits of $(\sin h)/h$ and $(\cos h - 1)/h)$ are $1$ and $0$ respectively.
+  It follows that $\cos x$ remains, proving that
+  \[\lim_{h\to0} \frac{\sin(x + h) - \sin x}{h} = \cos x.\]
+  
+  We can get the derivative of $\cos x$ in the same manner, but we do so in terms of $\sin x$ and the chain rule. We know that $\cos x = \sin(x + \pi/2)$. Let $u = x + \pi/2$. Taking the derivative of both sides with respect to $x$, we get
+  \[\frac{d(\cos x)}{dx} = \cos u = \cos \left(x + \frac{\pi}{2} \right) = -\sin x,\]
+  and our theorem is proven.
+\end{proof}
