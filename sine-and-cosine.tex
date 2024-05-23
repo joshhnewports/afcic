@@ -39,3 +39,13 @@ Determine the length $L$ of an arc of $\theta$ radians on a circle of radius $r$
   \[\frac{d(\cos x)}{dx} = \cos u = \cos \left(x + \frac{\pi}{2} \right) = -\sin x,\]
   and our theorem is proven.
 \end{proof}
+
+We prove
+\[\lim_{h\to0} \frac{\sin h}{h} = 1.\]
+Taking the figure given, we see that the area of the small triangle is lesser than the area of the sector, and that is lesser than the area of the big triangle. By similar triangles, $\overline{AB}$ corresponds to $\overline{CD}$ and $\overline{OA}$ corresponds to $\overline{OC}$. Hence
+\[\frac{|AB|}{|OA|} = \frac{|CD|}{|OC|},\]
+which is an equivalent statement to
+\[\frac{\sin h}{\cos h} = \frac{|CD|}{1} = t.\]
+
+Taking the inequalities, we multiply them by $2$ and get
+\[\cos h \sin h < h < \frac{\sin h}{\cos h}.\]
