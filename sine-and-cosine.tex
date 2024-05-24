@@ -42,10 +42,24 @@ Determine the length $L$ of an arc of $\theta$ radians on a circle of radius $r$
 
 We prove
 \[\lim_{h\to0} \frac{\sin h}{h} = 1.\]
-Taking the figure given, we see that the area of the small triangle is lesser than the area of the sector, and that is lesser than the area of the big triangle. By similar triangles, $\overline{AB}$ corresponds to $\overline{CD}$ and $\overline{OA}$ corresponds to $\overline{OC}$. Hence
-\[\frac{|AB|}{|OA|} = \frac{|CD|}{|OC|},\]
-which is an equivalent statement to
-\[\frac{\sin h}{\cos h} = \frac{|CD|}{1} = t.\]
+Taking the figure given, we see that the area of the small triangle is lesser than the area of the sector, and that is lesser than the area of the big triangle. We see that
+\[\frac{|AB|}{|OB|} = \sin h = s\]
+and
+\[\frac{|CD|}{|OC|} = \frac{|CD|}{1} = t\]
+where we equivalently find that
+\[t = \frac{\sin h}{\cos h} = \tan h.\]
+We could also have found that $t = \sin h/\cos h$ by similar triangles. We do this now. Take $|DC|/|BA| = |OC|/|OA|$.
+This relation is the same as $t/s = 1/\cos h$, and multiplying by $s = \sin h$ we get $t = \sin h/\cos h$.
 
-Taking the inequalities, we multiply them by $2$ and get
-\[\cos h \sin h < h < \frac{\sin h}{\cos h}.\]
+The area of the small triangle is $(\cos h \sin h)/2$, the area of the big triangle is $t/2 = (1/2)\sin h \cos h$, and the area of the sector is $h/2$. Hence
+\[\frac{1}{2} \cos h \sin h < \frac{1}{2} h < \frac{1}{2} \frac{\sin h}{\cos h}.\]
+Multiplying by $2$, we get
+\[\cos h \sin h < h <\frac{\sin h}{\cos h}.\]
+Recall we assumed $h > 0$, and know that we take $h$ to be small. Then it follows that $\sin h > 0$ so we multiply the inequalities by $1/\sin h$ to get
+\[\cos h < \frac{h}{\sin h} < \frac{1}{\cos h}.\]
+As $h$ approaches $0$, both $\cos h$ and $1/\cos h$ approach $1$. Thus $h/\sin h$ is squeezed between two quantities which approach $1$, and therefore $h/\sin h$ must approach $1$ also. This is given by Property $5$ of limits.
+
+Our desired quotient $(\sin h)/h$ is equal to $1/(h/\sin h)$. Since
+\[\lim_{h\to0} \frac{1}{h/\sin h} = \frac{\lim 1}{\lim h/\sin h} = \frac{1}{1} = 1,\]
+then
+\[\lim_{h\to0} \frac{\sin h}{h} = 1.\]
