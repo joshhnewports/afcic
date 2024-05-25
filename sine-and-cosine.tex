@@ -63,3 +63,17 @@ Our desired quotient $(\sin h)/h$ is equal to $1/(h/\sin h)$. Since
 \[\lim_{h\to0} \frac{1}{h/\sin h} = \frac{\lim 1}{\lim h/\sin h} = \frac{1}{1} = 1,\]
 then
 \[\lim_{h\to0} \frac{\sin h}{h} = 1.\]
+
+This was determined for $h > 0$. Suppose that $h < 0$. Write $h = -k$, then
+\[\frac{\sin(-k)}{-k} = \frac{-\sin k}{-k} = \frac{\sin k}{k}.\]
+As $h$ approaches $0$, so does $k$, and this is reduced to the previous case.
+
+For the limit of $(\cos h -1)/h$, we take
+\begin{align*}
+  \frac{\cos h - 1}{h} &= \frac{(\cos h -1)(\cos h + 1)}{h(\cos h + 1)}\\
+  &= \frac{\cos ^2 h - 1}{h(\cos h + 1)}\\
+  &= \frac{-\sin ^2 h}{h(\cos h + 1)}\\
+  &= -\frac{\sin h}{h} \sin h \frac{1}{\cos h + 1}.
+\end{align*}
+Taking the limit of each factor, which are easily determined, we find that
+\[\lim_{h\to0} \frac{\cos h -1}{h} = 0.\]
