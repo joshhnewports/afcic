@@ -16,3 +16,35 @@
 We see that the definitions for maximum and minimum points are analogous. Similarly, the next two definitions are analogous.
 
 We shall say that a point $c$ is a \textbf{local minimum} or \textbf{relative minimum} of the function $f$ if there exists an interval $a_1 < c < b_1$ such that $f(c) \le f(x)$ for all numbers $x$ with $a_1 \le x \le b_1$.
+
+\begin{theorem}
+  Let $f$ be a continuous function over a closed interval $[a,b]$. Then there exists a point in the interval where $f$ has a maximum, and there exists a point where $f$ has a minimum.
+\end{theorem}
+
+\begin{theorem}
+  Let $f$ be a continuous function on the interval $[a,b]$. Let $\alpha = f(a)$ and $\beta = f(b)$. Let $\gamma$ be a number between $\alpha$ and $\beta$. Then there exists a number $c$ such that $a < c < b$ and such that
+  \[f(c) = \gamma.\]
+\end{theorem}
+
+\begin{theorem}
+  Let $f$ be a function which is defined and differentiable in the open interval $a < x < b$. Let $c$ be a number in the interval at which the function has a local maximum or a local minimum. Then
+  \[f^\prime(c) = 0.\]
+\end{theorem}
+
+We must assume that $f$ is differentiable because we will differentiate in the proof. There exists local minima $c$ and local maxima $c_0$ in $(a,b)$ by Theorem 1.1. Then $c$ is a critical point. We now prove this theorem.
+
+\begin{proof}
+  We give the proof in the case of a local maximum. Taking small values of $h$, positive or negative, the number $c + h$ will lie in the interval. This is true because in terms of distance, since $c$ is not equal to $a$ or $b$, then there must be points between $c$ and $a$ or $b$. We take $h$ to be positive to determine the limit from the right.
+
+  Since we assume $c$ is a point where $f$ has a local maximum, then $f(c) \ge f(x)$ for all $x$ in this interval. As $c + h \ne c$, then $f(c) \ge f(c + h)$. Therefore
+  \[f(c + h) - f(c) \le 0.\]
+  Since we took $h$ to be positive, the Newton quotient satisfies
+  \[\frac{f(c + h) - f(c)}{h} \le 0.\]
+  Taking the limit as $h$ approaches $0$, we find that it is nonnegative.
+
+  Now take $h$ to be negative, say $h = -k$ with $k > 0$. Then
+  \[f(c - k) - f(c) \le 0.\]
+  Hence
+  \[\frac{f(c - k) - f(c)}{-k} = \frac{f(c) - f(c - k)}{k}.\]
+  Taking the limit as $h$ approaches $0$, we also find that it is nonnegative. Both limits exist and are equal to $0$. Therefore the derivative of $f$ at $c$ is $0$, thus $c$ is a critical point. The case of a local minimum is analogous, and the proof is concluded.
+\end{proof}
