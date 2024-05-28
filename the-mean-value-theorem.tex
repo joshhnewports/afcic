@@ -48,3 +48,33 @@ We must assume that $f$ is differentiable because we will differentiate in the p
   \[\frac{f(c - k) - f(c)}{-k} = \frac{f(c) - f(c - k)}{k}.\]
   Taking the limit as $h$ approaches $0$, we also find that it is nonnegative. Both limits exist and are equal to $0$. Therefore the derivative of $f$ at $c$ is $0$, thus $c$ is a critical point. The case of a local minimum is analogous, and the proof is concluded.
 \end{proof}
+
+Let $f$ be a function defined on some interval.
+
+\begin{definition}
+  We shall say that $f$ is increasing over this interval if
+  \[f(x_1) \le f(x_2)\]
+  whenever $x_1$ and $x_2$ are two points of the interval such that
+  \[x_1 \le x_2.\]
+\end{definition}
+
+We say that a function defined on some interval is decreasing over this interval if
+\[f(x_1) \ge f(x_2)\]
+whenever $x_1$ and $x_2$ are two points of the interval such that
+\[x_1 \le x_2.\]
+
+Observe that a constant function is both increasing and decreasing.
+
+A function $f$ is strictly increasing if $x_1 < x_2$ implies $f(x_1) < f(x_2)$ and $f$ is strictly decreasing if $x_1 < x_2$ implies $f(x_1) > f(x_2)$.
+
+Before stating the next theorem, know that if a function is differentiable over an interval $[a,b]$, then for example, the left derivative at $b$ exists but the right derivative does not. Hence there is no derivative at $b$ and analogous logic applies for $a$.
+
+\begin{theorem}
+  Let $f$ be a function which is continuous in some interval, and differentiable in the interval (excluding the end points).
+
+  If $f^\prime(x) > 0$ in the interval (excluding the end points), then $f$ is strictly increasing.
+
+  If $f^\prime(x) < 0$ in the interval (excluding the end points), then $f$ is strictly decreasing.
+
+  If $f^\prime(x) = 0$ in the interval (excluding the end points), then $f$ is constant.
+\end{theorem}
