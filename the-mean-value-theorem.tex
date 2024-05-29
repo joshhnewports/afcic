@@ -78,3 +78,16 @@ Before stating the next theorem, know that if a function is differentiable over 
 
   If $f^\prime(x) = 0$ in the interval (excluding the end points), then $f$ is constant.
 \end{theorem}
+
+Suppose we have two functions $f$ and $g$ over a certain interval $[a,b]$ and we assume that $f,g$ are differentiable. Suppose that $f(a) \le g(a)$, and that $f^\prime(x) \le g^\prime(x)$ throughout the interval. Then $f(x) \le g(x)$ in the interval.
+
+\begin{proof}
+  We let
+  \[h(x) = g(x) - f(x).\]
+  Then by assumption (because we assume $f^\prime(x) \le g^\prime(x)$ in the proposition statement)
+  \[h^\prime(x) = g^\prime - f^\prime \ge 0,\]
+  so $h$ is increasing in the interval. Since
+  \[h(a) = g(a) - f(a) \ge 0,\]
+  it follows that $h(x) \ge 0$ throughout the interval, whence
+  \[g(x) \ge f(x).\]
+\end{proof}
