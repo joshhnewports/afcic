@@ -91,3 +91,17 @@ Suppose we have two functions $f$ and $g$ over a certain interval $[a,b]$ and we
   it follows that $h(x) \ge 0$ throughout the interval, whence
   \[g(x) \ge f(x).\]
 \end{proof}
+
+\begin{theorem}
+  Let $f(x)$ and $g(x)$ be two functions which are differentiable in some interval and assume that
+  \[f^\prime(x) = g^\prime(x)\]
+  for all $x$ in the interval. Then there is a constant $C$ such that
+  \[f(x) = g(x) + C\]
+  for all $x$ in the interval.
+\end{theorem}
+
+\begin{proof}
+  Let $h(x) = f(x) - g(x)$ be the difference of our two functions. Then
+  \[h^\prime(x) = f^\prime(x) - g^\prime(x) = 0.\]
+  Hence $h(x)$ is constant by Theorem 2.1, that is $h(x) = C$ for some number $C$ and all $x$. This proves the theorem.
+\end{proof}
