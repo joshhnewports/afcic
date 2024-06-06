@@ -156,3 +156,22 @@ for $t > 0$.
 Let $f(t) = t + 1/t$. Then $f^\prime(t) = 1 + \frac{-1}{t^2}$. For $0 < t \le 1$, we have that $-1/t^2$ decreases as $t$ increases. Hence $f$ decreases in this interval. But
 \[f(1) = 2.\]
 Thus the inequality holds (despite $f$ decreasing at this interval). For $t > 1$, the expression $-1/t^2$ decreases and is $< 1$. Hence $f(t) = 1 - 1/t^2 > 0$ for $t > 1$. Hence $f$ increases in this interval. For both intervals, which merged is $t > 0$, the inequality holds and the proposition is proven.
+
+\begin{theorem}
+  Let $a, b$ be two numbers, $a < b$. Let $f$ be a function which is continuous over the closed interval
+  \[a \le x \le b\]
+  and differentiable on the open interval $a < x < b$. Assume that
+  \[f(a) = f(b) = 0.\]
+  Then there exists a point $c$ such that
+  \[a < c < b\]
+  and such that $f^\prime(c) = 0$.
+\end{theorem}
+
+\begin{proof}
+  If the function is constant in the interval, then its derivative is $0$ and any point in the open interval $a < x < b$ will do.
+
+  If the function is not constant, then there exists some point in the interval where the function is not $0$, and this point cannot be one of the end points $a$ or $b$. Suppose that some value of our function is positive. By Theorem 1.1, the function has a maximum at a point $c$. Then $f(c)$ must be greater than $0$, and $c$ cannot be either one of the end points because $f(a) = f(b) = 0$. Consequently
+  \[a < c < b.\]
+  By Theorem 1.3, we must have $f^\prime(c) = 0$. This proves our theorem in case the function is positive somewhere in the interval.
+
+\end{proof}
