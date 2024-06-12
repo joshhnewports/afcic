@@ -1,0 +1,32 @@
+\textbf{Example.} Find the limit of
+\[\frac{2x^3 - x}{x^4 - 1}\]
+as $x$ becomes large positive or negative.
+
+Let $Q(x) = (2x^3 - x)/(x^4 - 1)$. To take the limit of $Q(x)$ as $x$ becomes large, we factor the largest power of $x$ from both the numerator and denominator. This is
+\[\frac{x^3(2 - 1/x^2)}{x^4(1 - 1/x^4)}.\]
+Cancelling yields
+\[\frac{1}{x} \frac{2 - 1/x^2}{1 - 1/x^4}.\]
+Finding limits of $Q(x)$ amounts to finding limits of this expression. As $x$ goes to infinity, the right factor approaches $2$. The other factor approaches $0$. Hence
+\[\lim_{x\to\inf} Q(x) = 0.\]
+Furthermore
+\[\lim_{x\to\pm\inf} Q(x) = 0.\]
+
+We shall assume the upcoming expressions are functions $Q(x)$.
+
+\textbf{Example.} Find the limit of
+\[\frac{\sin x}{x}\]
+as $x$ becomes large positive or negative.
+
+Write
+\[\sin x \frac{1}{x}.\]
+The factor $1/x$ approaches $0$ as $x$ approaches infinity, and $\sin x$ oscillates between $-1$ and $1$ no matter how large $x$ is. Hence
+\[\lim_{x\to\pm\inf} Q(x) = 0.\]
+
+\textbf{Example.} Find the limit of
+\[\cos x \frac{1}{x}\]
+as $x$ becomes large positive or negative.
+
+Write
+\[\cos x \frac{1}{x}.\]
+It is clear that $\cos x$ oscillates between $-1$ and $1$. But $1/x$ approaches $0$ as $x$ goes to infinity. Hence
+\[\lim_{x\to\pm\inf} Q(x) = 0.\]
