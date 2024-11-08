@@ -53,3 +53,8 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
           &= x(2 - x^2).
         \end{align*}
         Fortunately for $x = 1$, we get $1 = 1(2 - 1)$, thus $f(1) = 2$.
+
+        Now we must find the inverse function of $f$. We have $f^\prime(x) = -3x^2 + 2$. Then $f^\prime(x) < 0$ iff $x > \sqrt{2/3}, x < -\sqrt{2/3}$ and $f^\prime(x) > 0$ iff $-\sqrt{2/3} < x < \sqrt{2/3}$. We select an interval to be the domain of $f$ for which the inverse function of $f$ will have inputs on. Since we want to find $g^\prime(2)$, and $f(1) = 2$, we need the interval containing 1 so that $2$ is a value of $f$. The interval satsifying this is $x > \sqrt{2/3}$ because one such $x = 1$ is $> \sqrt{2/3}$, and $f$ is strictly decreasing on this interval so the inverse function of $f$ is defined.
+
+        Now we need $g^\prime(2)$, and is
+        \[g^\prime(2) = \frac{1}{f^\prime(g(2))} = \frac{1}{f^\prime(1)} = \frac{1}{-1} = -1.\]
