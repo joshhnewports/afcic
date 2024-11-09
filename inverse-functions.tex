@@ -21,12 +21,12 @@ Had we defined the function for all $x$, then there corresponds for all $y \ne 0
 
 Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. We view $f$ as defined only for numbers $x > 0$. Since $f^\prime(x) = nx^{n-1}$, the function is strictly increasing (if $n = 1$ then $nx^{n-1} = 1$, and if $n > 1$ then $nx^{n-1} > 0$, and in both cases $nx^{n-1} > 0$). Hence the inverse function exists and is the $n$-th root function.
 
-\textbf{Example.} Let $f(x) = x^2 + 2x - 3$ for $0 \le x$. We have $f^\prime(x) = 2x + 2$. Thus $f^\prime(x) > 0$ iff $x > -1$ and $f^\prime(x) < 0$ iff $x < -1$. Clearly $f$ is never strictly decreasing because its domain does not contain any numbers $x < -1$. But $f$ is indeed strictly increasing for all numbers it is defined for. The range of $f$ is $[2, \inf)$, and this is the domain of the inverse function as given by Theorem 1.1.
+\textbf{Example.} Let $f(x) = x^2 + 2x - 3$ for $0 \le x$. We have $f^\prime(x) = 2x + 2$. Thus $f^\prime(x) > 0$ iff $x > -1$ and $f^\prime(x) < 0$ iff $x < -1$. Clearly $f$ is never strictly decreasing because its domain does not contain any numbers $x < -1$. But $f$ is indeed strictly increasing for all numbers it is defined for. The range of $f$ is $[2, \inf)$, and this is the domain of the inverse function as given by Theorem 1.1. 
 
   \textbf{Example.} Let $f(x) = x/(x+1)$ for $-1 < x$. Then $f^\prime(x) = 1/(x+1)^2$. For $x \ne -1$, the divisor is a square is always positive. Hence $f(x)$ is strictly increasing for all $x$ it is defined for. By Theorem 1.1, $f$ has an inverse function $g$. Now we must find what values $g$ is defined on.
   
   Recall that a hyperbola is the graph of an equation $xy = 1$ or $y = 1/x$. Indeed $f$ is a hyperbola with a vertical asymptote at $-1$. We expect one curve on both sides of the asymptote. Yet $f$ is not defined for those points to the left of the asymptote.
-
+  
   As $x \to \inf, f(x) = 1/(1 + 1/x) \to 1$. As $x \to -1$ from the right, $x + 1 \to \inf$ hence $x/(x + 1) \to -\inf$. Therefore the interval of values of $f$ is $(-\inf, -1)$, and this is the domain of of the inverse function of $f$.
 
   \textbf{Example.} Let $f(x) = x/(x + 2)$ for $-2 < x$. We have $f^\prime(x) = 2/(x + 2)^2$. For $x \ne -2$, we have $f^\prime(x) > 0$. So $f$ is strictly increasing for all numbers it is defined for. As $x \to \inf, f(x) \to 1$. As $x \to -2$ from the right, $x + 2 \to 0$, hence $x/(x + 2) \to -\inf$. Thus the set of values of $f$ is $(-\inf, 1)$, and this is what the inverse function is defined on.
@@ -34,27 +34,29 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
   \textbf{Example.} Let $f(x) = (x + 1)/(x - 1)$ for $1 < x$. We have $f^\prime(x) = -2/(x - 1)^2$. For $x \ne 1$, we have $f^\prime(x) < 0$. Hence $f$ is strictly decreasing for all numbers it is defined for. As $x \to \inf, f(x) \to 1$. As $x \to 1$ from the right, $f(x) \to \inf$. Thus the set of values of $f$ is $(1, \inf)$, and is what the inverse function is defined on.
 
   \textbf{Example.} Let $f(x) = 1/x^2$ for $0 < x \le 1$. Then $f^\prime(x) = -2/x^3$. Thus $f(x)$ is strictly decreasing. And we find that the range of $f(x)$ is $[1, \inf)$, and this is the domain of the inverse function of $f$.
-
+    
     \textbf{Example.} Let $f(x) = x + 1/x$ for $0 < x \le 1$. Then $f^\prime(x) = 1 + -1/x^2$ and $f^{\prime\prime}(x) = 2/x^3$. We have that $f'(x) < 0$ for $x \ne 1$. Since $1$ is an endpoint of the interval, $f$ is not differentiable at that point. But this does not contradict $f$ from being strictly monotonic at $1$. As $x \to 0, f(x) \to \inf$, and $f(1) = 2$. Indeed the derivative gave us that $f$ is strictly decreasing, but after finding the limits of the domain we deduce that $f$ is still strictly decreasing at $2$, which the derivative could not give us. We know that there \textit{could} be points that could show that $f$ is not strictly decreasing. There would be a change in direction of the curve, but the second derivative shows there is none. Thus we have no other choice but that $f$ is strictly decreasing. The range of $f$ is $[2, \inf)$ and is the domain of the inverse function of $f$.
 
       \textbf{Example.} Let $f(x) = 2x/(1 + x^2)$ for $-1 \le x \le 1$. Then
       \[-\frac{2(x^2 - 1)}{(1 + x^2)^2}.\]
       We have $f^\prime(x) > 0$ iff $2(1 - x^2) > 0$ iff $1 > x^2$ and is true for the domain where $x \ne \pm 1$. By inspection, $f(-1) = -1$ and $f(1) = 1$. Indeed $f$ is strictly increasing. Thus the inverse function of $f$ exists and its domain is $[-1, 1]$.
+      
+      \textbf{Theorem 2.1.} \textit{Let $a, b$ be two numbers, $a < b$. Let $f$ be a function which is differentiable on the interval $a < x < b$ and such that its derivative $f^\prime(x)$ is $> 0$ for all $x$ in this open interval. Then the inverse function $g(y)$ exists and we have}
+      \[g^\prime(y) = \frac{1}{f^\prime(x)}.\]
 
-      \textbf{Theorem 2.1.} \textit{Let $a, b$ be two numbers, $a < b$. Let $f$ be a function which is differentiable on the interval $a < x < b$ and such that its derivative $f^\prime(x)$ is $> 0$ for all $x$ in this open interval. Then the inverse function $g(y)$ exists and we have
-        \[g^\prime(y) = \frac{1}{f^\prime(x)}.\]
-
-        \textbf{Example.} Let $f(x) = -x^3 + 2x + 1$. Find $g^\prime(2)$. We need to find the $x$ such that $f(x) = 2$. Write
-        \[2 = -x^3 + 2x + 1,\]
-        which is
-        \begin{align*}
-          1 &= -x^3 + 2x\\
-          &= x(-x^2 + 2)\\
-          &= x(2 - x^2).
-        \end{align*}
-        Fortunately for $x = 1$, we get $1 = 1(2 - 1)$, thus $f(1) = 2$.
-
-        Now we must find the inverse function of $f$. We have $f^\prime(x) = -3x^2 + 2$. Then $f^\prime(x) < 0$ iff $x > \sqrt{2/3}, x < -\sqrt{2/3}$ and $f^\prime(x) > 0$ iff $-\sqrt{2/3} < x < \sqrt{2/3}$. We select an interval to be the domain of $f$ for which the inverse function of $f$ will have inputs on. Since we want to find $g^\prime(2)$, and $f(1) = 2$, we need the interval containing 1 so that $2$ is a value of $f$. The interval satsifying this is $x > \sqrt{2/3}$ because one such $x = 1$ is $> \sqrt{2/3}$, and $f$ is strictly decreasing on this interval so the inverse function of $f$ is defined.
-
-        Now we need $g^\prime(2)$, and is
-        \[g^\prime(2) = \frac{1}{f^\prime(g(2))} = \frac{1}{f^\prime(1)} = \frac{1}{-1} = -1.\]
+      \textbf{Example.} Let $f(x) = -x^3 + 2x + 1$. Find $g^\prime(2)$. We need to find the $x$ such that $f(x) = 2$. Write
+      \[2 = -x^3 + 2x + 1,\]
+      which is
+      \begin{align*}
+        1 &= -x^3 + 2x\\
+        &= x(-x^2 + 2)\\
+        &= x(2 - x^2).
+      \end{align*}
+      Fortunately for $x = 1$, we get $1 = 1(2 - 1)$, thus $f(1) = 2$.
+      
+      Now we must find the inverse function of $f$. We have $f^\prime(x) = -3x^2 + 2$. Then $f^\prime(x) < 0$ iff $x > \sqrt{2/3}, x < -\sqrt{2/3}$ and $f^\prime(x) > 0$ iff $-\sqrt{2/3} < x < \sqrt{2/3}$. We select an interval to be the domain of $f$ for which the inverse function of $f$ will have inputs on. Since we want to find $g^\prime(2)$, and $f(1) = 2$, we need the interval containing 1 so that $2$ is a value of $f$. The interval satsifying this is $x > \sqrt{2/3}$ because one such $x = 1$ is $> \sqrt{2/3}$, and $f$ is strictly decreasing on this interval so the inverse function of $f$ is defined.
+      
+      Now we need $g^\prime(2)$, and is
+      \[g^\prime(2) = \frac{1}{f^\prime(g(2))} = \frac{1}{f^\prime(1)} = \frac{1}{-1} = -1.\]
+      
+      \textbf{Example.} Let $f(x) = (x-1)(x-2)(x-3)$. Find $g^\prime(6)$. We have $f^\prime(x) = 3x^2 - 12x + 11$. Factoring is difficult so we use the quadratic formula to find the roots of $f^\prime$. These are $x = 2 \pm \sqrt{23/3}$. Thus we have three intervals where $f^\prime$ is either positive or negative. By inspection, we have $f^\prime(x) > 0$ iff $x < 2 - \sqrt{23/3}, x > 2 + \sqrt{23/3}$ and $f^\prime(x) < 0$ iff $2 - \sqrt{23/3} < x < 2 + \sqrt{23/3}$.
