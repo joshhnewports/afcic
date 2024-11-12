@@ -79,4 +79,14 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
       \textbf{Example.} We have
       \[\arcsin(\sin \frac{3\pi}{4}) = \frac{\pi}{4}\]
       because $\sin 3\pi/4 = 1/\sqrt{2}$ and $\arcsin 1/\sqrt{2} = \pi/4$.
+
+      \textbf{Arccos.} View the cosine function as being defined only on the interval $[0, \pi]$. Take the derivative of $\cos$ with respect to $x$
+      \[\cos^\prime x = -\sin x.\]
+      We know that $\sin x > 0$ over $(0, \pi)$. Thus $-\sin < 0$ over $(0, \pi)$. So $\cos^\prime x$ is strictly increasing, its inverse function exists, and its domain is
+      \[[\cos \pi, \cos 0] = [-1, 1].\]
+      Call it \arccos. The derivative is
+      \[\arccos^\prime y = \frac{1}{\cos^\prime x} = \frac{1}{-\sin x}.\]
+      We can take the limits of $arccos^\prime$ to find its behavior near the endpoints of its range, and find
+      \[\lim_{x\to0^+} \frac{1}{-\sin x} = -\inf,\: \text{and}\: \lim_{x\to\pi^-} \frac{1}{-\sin x} = -\inf.\]
+      Thus as $x\to0^+$ or $x\to\pi^-$, the curve becomes nearly vertical. We also have that the curve points downward as the derivative is negative. Here are some special values: $\arccos 0 = \pi/2, \arccos 1 = 0, \arccos -1 = \pi$.
       
