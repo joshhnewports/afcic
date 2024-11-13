@@ -89,4 +89,13 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
       We can take the limits of $arccos^\prime$ to find its behavior near the endpoints of its range, and find
       \[\lim_{x\to0^+} \frac{1}{-\sin x} = -\inf,\: \text{and}\: \lim_{x\to\pi^-} \frac{1}{-\sin x} = -\inf.\]
       Thus as $x\to0^+$ or $x\to\pi^-$, the curve becomes nearly vertical. We also have that the curve points downward as the derivative is negative. Here are some special values: $\arccos 0 = \pi/2, \arccos 1 = 0, \arccos -1 = \pi$.
+
+      We can write the derivative of $\arrcos y$ explicitly in terms of $y$. Write
+      \[\cos^2 x + \sin^2 x = 1\]
+      so
+      \[|\sin x| = \sqrt{1 - \cos^2 x}.\]
+      Since $\sin x \ge 0$ for the interval on which $x$ is defined on, which is $[0, \pi]$. Thus we need not consider when $\sin x < 0$, so we do not look at the negative value case of the absolute value. So we have
+      \[\sin x = \sqrt{1 - \cos^2 x}\]
+      and $\cos x = y$, thus
+      \[\arccos^\prime y = \frac{1}{-\sqrt{1 - y^2}}.\]
       
