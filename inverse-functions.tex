@@ -98,4 +98,12 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
       \[\sin x = \sqrt{1 - \cos^2 x}\]
       and $\cos x = y$, thus
       \[\arccos^\prime y = \frac{1}{-\sqrt{1 - y^2}}.\]
+
+      \textbf{Arcsec.} Let $\sec x = 1/\cos x$. We can select an interval naively. Since $\sec x$ is not defined at $x = \pi/2$ or $x = -\pi/2$, we choose the interval $(-\pi/2, \pi/2)$. We find the derivative
+      \begin{align*}
+        \sec^\prime x &= \frac{-1}{\cos^2 x} \cos^\prime x\\
+        &= \frac{\sin x}{\cos^2 x}\\
+        &= \tan x \sec x.
+      \end{align*}
+      Since $\cos x > 0$ for $-\pi/2 < x < \pi/2$, then $\sec x > 0$. Furthermore, $\sin x < 0$ for $-\pi/2 < x < 0$ and $\sin x > 0$ for $0 < x < \pi/2$. We select the interval $0 < x < \pi/2$ instead to be the domain of $\sec x$. For this interval, we have $\tan x > 0$ and $\sec x > 0$. Thus $\sec^\prime x > 0$. So $\sec x$ is strictly increasing over this interval.
       
