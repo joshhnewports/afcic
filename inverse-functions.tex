@@ -108,5 +108,19 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
       Since $\cos x > 0$ for $-\pi/2 < x < \pi/2$, then $\sec x > 0$. Furthermore, $\sin x < 0$ for $-\pi/2 < x < 0$ and $\sin x > 0$ for $0 < x < \pi/2$. We select the interval $0 < x < \pi/2$ instead to be the domain of $\sec x$. For this interval, we have $\tan x > 0$ and $\sec x > 0$. Thus $\sec^\prime x > 0$. So $\sec x$ is strictly increasing over this interval.
 
       Let us also inspect the endpoints. We have $\sec^\prime 0 = 0$ and $\sec^\prime \pi/2$ is clearly not defined.
-      Hence $\sec$ is strictly increasing over $[0, \pi/2)$. We define the inverse function whose domain is the range of $\sec$ at this interval. We have $\sec 0 = 1$.
+      Hence $\sec$ is strictly increasing over $[0, \pi/2)$. We define the inverse function whose domain is the range of $\sec$ at this interval. We have $\sec 0 = 1$ and $\lim_{x\to(\pi/2)^-} \sec x = \inf$. So the inverse function of $\sec$ has the domain $[1, \inf)$.
+
+          The derivative of this inverse function is
+          \begin{align*}
+            (\sec^{-1})^\prime (x) &= \frac{1}{\sec^\prime (\sec^{-1} x)}\\
+            &= \frac{1}{\sec^\prime y}\\
+            &= \frac{1}{\tan y \sec y}\\
+            &= \frac{1}{\frac{\sin y}{\cos y} \frac{1}{\cos y}}\\
+            &= (\frac{\sin y}{\cos^2 y})^{-1}\\
+            &= \frac{\cos^2 y}{\sin y},\\
+          \end{align*}
+
+          where $\sec^{-1} x$ is the $y$ such that $\sec y = x$.
+
+          
       
