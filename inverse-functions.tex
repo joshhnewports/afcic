@@ -122,5 +122,18 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
 
           where $\sec^{-1} x$ is the $y$ such that $\sec y = x$.
 
+          \textbf{Example.} Find the derivative of $\arcsin(x^2 - 1)$ with respect to $x$. Say $y = f(x) = x^2 - 1$. Then we must find the derivative of $\arcsin y$ with respect to $x$. Write
+          \begin{align*}
+            (\arcsin y)^\prime(x) &= \arcsin^\prime(y) \cdot y^\prime(x)\\
+            &= \arcsin^\prime(x^2 - 1) \cdot (x^2 - 1)^\prime(x).
+          \end{align*}
+
+          The left factor is
+          \[\arcsin^\prime(x^2 - 1) = \frac{1}{\sqrt{1 - (x^2 - 1)^2}}\]
+          and the right factor is
+          \[(x^2 - 1)^\prime(x) = 2x.\]
+          Thus we have
+          \[(arcsin(x^2 - 1))^\prime = \frac{2x}{\sqrt{1 - (x^2 - 1)^2}}.\]
+
           
       
