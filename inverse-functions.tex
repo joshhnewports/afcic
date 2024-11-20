@@ -135,5 +135,11 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
           Thus we have
           \[(arcsin(x^2 - 1))^\prime = \frac{2x}{\sqrt{1 - (x^2 - 1)^2}}.\]
 
-          
-      
+          \textbf{Example.} Find the derivative of $2/(\arccos 2x)$ with respect to $x$. This is
+          \begin{align*}
+            (\frac{2}{\arccos 2x})^\prime(x) &= (2 \cdot \frac{1}{\arccos 2x})^\prime(x)\\
+            &= 2(\frac{1}{\arccos 2x})^\prime(x)\\
+            &= 2 \cdot \frac{-1}{\arccos^2 2x} \cdot (\arccos 2x)^\prime(x)\\
+            &= \frac{-2}{\arccos^2 2x} \cdot \arccos^\prime 2x \cdot (2x)^\prime(x)\\
+            &= \frac{-2}{\arccos^2 2x} \cdot \frac{1}{-\sqrt{1 - (2x)^2}} \cdot 2\\
+            &= \frac{4}{(\arccos^2 2x)\sqrt{1 - (2x)^2}}.
