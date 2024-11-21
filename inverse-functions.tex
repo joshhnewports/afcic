@@ -44,6 +44,11 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
       \textbf{Theorem 2.1.} \textit{Let $a, b$ be two numbers, $a < b$. Let $f$ be a function which is differentiable on the interval $a < x < b$ and such that its derivative $f^\prime(x)$ is $> 0$ for all $x$ in this open interval. Then the inverse function $g(y)$ exists and we have}
       \[g^\prime(y) = \frac{1}{f^\prime(x)}.\]
 
+      \textit{Proof.} Take the Newton quotient
+      \[\frac{g(y + k) - g(y)}{k}.\]
+      By the intermediate value theorem, all numbers of the form $y + k$ for small $k$ can be written as a value of $f$. This means that there exists numbers $x, h$ such that under $f$ they take on $y + k$. Let $x = g(y)$ and $h = g(y + k) - g(y)$. Then $g(y + k) = x + h$. By the relation of inverse functions, we have $y + k = f(x + h)$. Hence $k = f(x + h) - y = f(x + h) - f(x)$. The Newton quotient for $g$ can therefore be written
+      \[\frac{g(y + k) - g(y)}{k} = \frac{x + h - x}{f(x + h) - f(x)} = \frac{h}{f(x + h) - f(x)}.\]
+
       \textbf{Example.} Let $f(x) = -x^3 + 2x + 1$. Find $g^\prime(2)$. We need to find the $x$ such that $f(x) = 2$. Write
       \[2 = -x^3 + 2x + 1,\]
       which is
