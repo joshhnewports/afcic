@@ -48,6 +48,9 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
       \[\frac{g(y + k) - g(y)}{k}.\]
       By the intermediate value theorem, all numbers of the form $y + k$ for small $k$ can be written as a value of $f$. This means that there exists numbers $x, h$ such that under $f$ they take on $y + k$. Let $x = g(y)$ and $h = g(y + k) - g(y)$. Then $g(y + k) = x + h$. By the relation of inverse functions, we have $y + k = f(x + h)$. Hence $k = f(x + h) - y = f(x + h) - f(x)$. The Newton quotient for $g$ can therefore be written
       \[\frac{g(y + k) - g(y)}{k} = \frac{x + h - x}{f(x + h) - f(x)} = \frac{h}{f(x + h) - f(x)}.\]
+      This is the reciprocal of the Newton quotient of $f$. As $h \to 0$, then we get
+      \[\frac{1}{f^\prime(x)}\]
+      and this is $g^\prime(y)$.
 
       \textbf{Example.} Let $f(x) = -x^3 + 2x + 1$. Find $g^\prime(2)$. We need to find the $x$ such that $f(x) = 2$. Write
       \[2 = -x^3 + 2x + 1,\]
