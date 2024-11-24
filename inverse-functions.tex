@@ -160,5 +160,14 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
           \begin{align*}
             (\frac{1}{\sin^\prime(\arcsin x)})^\prime &= \frac{-1}{(\sin^\prime(\arcsin x))^2} \cdot (\sin^\prime(\arcsin x))^\prime\\
             &= \frac{-1}{\cos^2(\arcsin x)} \cdot -\sin(\arcsin x) \cdot \frac{1}{\cos(\arcsin x)}\\
-            &= \frac{\sin(\arcsin x)}{\cos^3(\arcsin x)}.
+            &= \frac{\sin(\arcsin x)}{\cos^3(\arcsin x)}\\
+            &= \frac{x}{\cos^3(\arcsin x)}\\
+            &= \frac{x}{\cos^2(\arcsin x)\cos(\arcsin x)}.
           \end{align*}
+          Since $\arcsin^{\prime\prime}$ is derived from $\arcsin^\prime$, we assume the domain of $x$ for $\arcsin^\prime$. That is $-1 < x < 1$. The range of $\arcsin^\prime x$ over $(-1, 1)$ is $(-\pi/2, \pi/2)$ and $\cos x$ is positive over this interval. This justifies writing $\cos y = \sqrt{1 - \sin^2 y}$ without the absolute value. So we have
+          \[\frac{x}{\cos^2(\arcsin x)\sqrt{1 - \sin^2(\arcsin x)}} = \frac{x}{cos^2(\arcsin x)\sqrt{1 - x^2}}.\]
+          For the $\cos^2$ factor we take the previous result and square it to get
+          \[\frac{x}{(1 - x^2)\sqrt{1 - x^2}}\]
+          hence
+          \[\arcsin^{\prime\prime} x = \frac{x}{(1 - x^2)\sqrt{1 - x^2}}.\]
+          
