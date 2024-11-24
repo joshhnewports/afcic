@@ -156,3 +156,9 @@ Here is an important result. Let $f(x) = x^n$, where $n$ is a positive integer. 
           \textbf{Example.} Determine the intervals over which the function arcsin is beding upward, and bending downward.
 
           Recall $\arcsin^\prime x = 1/sin^\prime(\arcsin x) = 1/\sqrt{1 - x^2}$. The domain of arcsin is $[-1, 1] = [\sin -\pi/2, \sin \pi/2]$. The domain of $\arcsin^\prime$ is $(-1, 1)$ as is clear by $1/\sqrt{1 - x^2}$ where the divisor is $0$ at $\pm 1$.
+          Find $\arcsin^{\prime\prime} x$. This is
+          \begin{align*}
+            (\frac{1}{\sin^\prime(\arcsin x)})^\prime &= \frac{-1}{(\sin^\prime(\arcsin x))^2} \cdot (\sin^\prime(\arcsin x))^\prime\\
+            &= \frac{-1}{\cos^2(\arcsin x)} \cdot -\sin(\arcsin x) \cdot \frac{1}{\cos(\arcsin x)}\\
+            &= \frac{\sin(\arcsin x)}{\cos^3(\arcsin x)}.
+          \end{align*}
